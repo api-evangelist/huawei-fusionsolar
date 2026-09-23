@@ -1,23 +1,82 @@
 aid: huawei-fusionsolar
+
 name: Huawei FusionSolar
-description: 'Huawei FusionSolar is a company surfaced via the API Evangelist harvest backlog (source:
-  energy) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://solar.huawei.com/admin/asset/v1/pro/view/83edde1a92a94a33ab98eb70fe8eb7aa.png
+
+description: 'Huawei FusionSolar provides intelligent solar energy solutions, including photovoltaic inverters, energy storage systems, and management platforms for residential, commercial, and utility-scale solar projects. The platform offers monitoring, design tools, and a developer portal for integrating solar data and services.'
+
 url: https://raw.githubusercontent.com/api-evangelist/huawei-fusionsolar/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:energy
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-23'
+
 modified: '2026-09-23'
+
 tags:
 - Company
-apis: []
+- Solar
+- Energy
+- IoT
+- Inverters
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: DomainSecurity
+  url: security/huawei-fusionsolar-domain-security.yml
 - type: Website
   url: https://solar.huawei.com/
+
+common:
+- type: Vendors
+  url: vendors/huawei-fusionsolar-vendors.yml
+- type: Documentation
+  url: https://developer.huawei.com/
+- type: DeveloperPortal
+  url: https://developer.huaweicloud.com/?utm_source=hdhome&amp;utm_adplace=AdPlace070853
+- type: Hosts
+  url: hosts/huawei-fusionsolar-hosts.yml
+- type: TrustCenter
+  url: https://www.huawei.com/cn/trust-center
+- type: Newsroom
+  url: https://solar.huawei.com/news
+- type: Blog
+  url: https://blog.huawei.com/
+- type: GettingStarted
+  url: https://developer.huawei.com/consumer/cn/llms/docs-getting-started.txt
+- type: Support
+  url: https://solar.huawei.com/cn/support
+- type: PrivacyPolicy
+  url: https://solar.huawei.com/cn/privacy
+- type: ContactUs
+  url: https://solar.huawei.com/cn/contact-us/
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Developer portal pages render only via JavaScript, preventing machine‑readable spec discovery.
+  evidence:
+    - url: https://developer.huawei.com/
+      status: 200
+  checked: 2026-09-23
+x-enrichment:
+  date: '2026-09-23'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
