@@ -39,8 +39,6 @@ common:
   url: security/huawei-fusionsolar-domain-security.yml
 - type: Website
   url: https://solar.huawei.com/
-
-common:
 - type: Vendors
   url: vendors/huawei-fusionsolar-vendors.yml
 - type: Documentation
