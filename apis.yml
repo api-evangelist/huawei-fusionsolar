@@ -44,7 +44,7 @@ common:
 - type: Documentation
   url: https://developer.huawei.com/
 - type: DeveloperPortal
-  url: https://developer.huaweicloud.com/?utm_source=hdhome&amp;utm_adplace=AdPlace070853
+  url: https://developer.huaweicloud.com/?amp;utm_adplace=AdPlace070853
 - type: Hosts
   url: hosts/huawei-fusionsolar-hosts.yml
 - type: TrustCenter
